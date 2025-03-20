@@ -1,0 +1,47 @@
+.box {
+    height: 600px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid gold;
+    border-radius: 8px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    height: 200px;
+    margin-top: 40px;
+}
+
+/* .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+} */
+.item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item_border {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
