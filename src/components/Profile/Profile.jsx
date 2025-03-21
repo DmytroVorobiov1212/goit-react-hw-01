@@ -10,24 +10,24 @@ const Profile = ({
 }) => {
   return (
     <div className={s.box}>
-      <div>
+      <div className={s.description}>
         <img className={s.img} src={image} alt={name} />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
       <ul className={s.list}>
         <li className={s.item}>
-          <span>Followers</span>
-          <span>{followers}</span>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}>{followers}</span>
         </li>
         <li className={clsx(s.item, s.item_border)}>
-          <span>Views</span>
-          <span>{views}</span>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}>{views}</span>
         </li>
         <li className={s.item}>
-          <span>Likes</span>
-          <span>{likes}</span>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}>{likes}</span>
         </li>
       </ul>
     </div>

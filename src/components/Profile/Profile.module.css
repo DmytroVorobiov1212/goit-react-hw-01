@@ -1,47 +1,67 @@
 .box {
-    height: 600px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid gold;
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+    box-shadow: 0px 10px 5px 0px rgba(174, 214, 15, 1);
     border-radius: 8px;
-    display: block;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    background-color: gray;
+    font-family: sans-serif;
     text-align: center;
-}
 
-.img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: grey;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .description {
+        padding: 20px;
 
-.list {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid gray;
-    height: 200px;
-    margin-top: 40px;
-}
+        .img {
+            display: block;
+            margin: 0 auto 16px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #f3f3f3;
+        }
 
-/* .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        .name {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
 
-} */
-.item {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    text-align: center;
-}
+        .tag,
+        .location {
+            color: black;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+    }
 
-.item_border {
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+    .list {
+        display: flex;
+        background-color: #2f4f4f;
+        border-top: 2px solid black;
+
+        .item {
+            flex: 1;
+            padding: 16px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            border-right: 2px solid black;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .label {
+                font-size: 14px;
+                color: #0f0e0e;
+            }
+
+            .quantity {
+                font-weight: bold;
+                font-size: 16px;
+                color: black;
+            }
+        }
+    }
 }

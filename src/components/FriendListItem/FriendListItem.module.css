@@ -1,0 +1,19 @@
+.img {
+    margin-bottom: 10px;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+.status {
+    font-weight: bold;
+
+    &.online {
+        color: green;
+    }
+
+    &.offline {
+        color: red;
+    }
+}
